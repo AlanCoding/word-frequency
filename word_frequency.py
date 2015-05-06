@@ -4,7 +4,7 @@ import sys
 def clean_text(text):
     """Sanitizes text by replacing all non-alpha chars with spaces"""
     cleaned = text.lower()
-    cleaned = re.sub(r'[^a-z]'," ",cleaned)
+    cleaned = re.sub(r"[^a-z^']"," ",cleaned)
     return cleaned
 
 def word_frequency(text):
